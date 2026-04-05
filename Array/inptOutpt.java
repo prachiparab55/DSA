@@ -1,28 +1,34 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class inptOutpt {
-    public static void main (String[] args) {
+public class ArraysCC {
+    public static void main(String args[]) {
+
         int marks[] = new int[100];
 
-        //input in array
         Scanner sc = new Scanner(System.in);
-        //int phy;
-        //phy = sc.nextInt();
 
-        //marks[0] = sc.nextInt();      //phy
-        //marks[1] = sc.nextInt();      //chem
-        //marks[2] = sc.nextInt();      //math
+        System.out.println("Length of array = " + marks.length);
 
-        System.out.println("lenghth of the array is : " + marks.length);
+        // Taking input
+        System.out.print("Enter Physics marks: ");
+        marks[0] = sc.nextInt();
 
+        System.out.print("Enter Chemistry marks: ");
+        marks[1] = sc.nextInt();
 
-        //output in array
-        //System.out.println("phy: " + marks[0]);
-        //System.out.println("chem: " + marks[1]);
-        //System.out.println("math: " + marks[2]);
+        System.out.print("Enter Maths marks: ");
+        marks[2] = sc.nextInt();
 
-       //int percentage = (marks[0] + marks[1] + marks[2]) / 3;
-       //System.out.println("percentage:" + percentage + "%");
+        // Printing values
+        System.out.println("Physics: " + marks[0]);
+        System.out.println("Chemistry: " + marks[1]);
+        System.out.println("Maths: " + marks[2]);
 
+        // Calculating percentage
+        int percentage = (marks[0] + marks[1] + marks[2]) / 3;
+
+        System.out.println("Percentage = " + percentage + "%");
+
+        sc.close();
     }
 }
