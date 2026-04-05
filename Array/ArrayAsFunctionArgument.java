@@ -1,22 +1,29 @@
-import java.util.*;
+/*
+     Question:
+     Write a Java program to demonstrate passing an array as a function argument.
+     Create a function that increases each element of the array by 1
+     and print the updated array.
+*/
 
-public class ArrayAsFunctionArgument {
+import java.util.Scanner;
 
-    public static void update(int marks[]) {   // will take our array as argument
+public class ArraysCC {
+
+    public static void update(int marks[]) {
         for (int i = 0; i < marks.length; i++) {
             marks[i] = marks[i] + 1;
         }
     }
 
     public static void main(String args[]) {
-        int marks[] = {97, 98, 99};
+        int marks[] = { 97, 98, 99 };
+
         update(marks);
 
-        // print our marks
+        // to print marks
         for (int i = 0; i < marks.length; i++) {
-            System.out.println(marks[i] + "");
+            System.out.print(marks[i] + " ");
         }
-
         System.out.println();
     }
 }
